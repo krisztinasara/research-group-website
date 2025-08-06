@@ -1,10 +1,17 @@
+/* =====================
+   1. Reset & Global Styles
+   ===================== */
 html, body {
     margin: 0px;
     padding: 0px;
 }
 
+/* =====================
+   2. Typography
+   ===================== */
 h1 {
     font-family: DM Serif Display;
+    color: #422168;
     font-size: 42px;
 }
 
@@ -13,36 +20,39 @@ p {
     font-size: 18px;
 }
 
-
-a:link {
+/* Links */
+a:link, a:visited {
     text-decoration: none;
     color: black;
 }
-a:visited {
-    text-decoration: none;
-    color: black;
-}
-a:hover {
-    text-decoration: none;
-    color: white;
-}
-a:active {
-    text-decoration: none;
-    color: yellowgreen;
-}
 
+/* =====================
+   3. Layout & Structure
+   ===================== */
+.header-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 #header {
     display: flex;
     align-items: center;
 }
 
-.header-footer {
+.content {
+    padding-top: 200px;
+    padding-bottom: 200px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: plum;
 }
 
+#title {
+    color: #422168;
+}
+
+/* =====================
+   4. Navigation Styles
+   ===================== */
 #toc {
     font-family: Nunito;
     flex: 1;
@@ -59,32 +69,37 @@ a:active {
     padding: 0px 5px 0px 5px;
 }
 
+.nav-link:hover,
+.nav-link:active {
+    text-decoration: none;
+    color: white;
+    background-color: #CAF204;
+}
+
+/* =====================
+   5. Language Selector
+   ===================== */
 #language-selector {
     font-family: Nunito;
 }
 
 .lang-btn {
-    padding: 10px;
+    padding: 5px;
 }
 
 #active-lang-btn {
-    background-color: cornflowerblue;
-    border-radius: 25px;
-}
-
-#passive-lang-btn:hover {
-    background-color: blueviolet;
-    border-radius: 25px;
+    background-color: #422168;
     color: white;
 }
 
-.content {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 50px;
-    padding-right: 50px;
+#passive-lang-btn:hover {
+    background-color: #CAF204;
+    color: white;
 }
 
+/* =====================
+   6. Team Section
+   ===================== */
 #the-team tr {
     text-align: center;
 }
@@ -93,6 +108,9 @@ a:active {
     color: dimgray;
 }
 
+/* =====================
+   7. Footer Styles
+   ===================== */
 #footer {
     padding: 50px;
 }

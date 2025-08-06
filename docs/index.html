@@ -11,26 +11,26 @@
 </head>
 
 <body>
-    <div class="header-footer" id="header">
-        <h1>Lukács Lab</h1>
-        <div id="toc">
+    <header class="header-footer" id="header">
+        <h1 id="title"><a href="index.html">Lukács Lab</a></h1>
+        <nav id="toc">
             <ul>
-                <li><a href="#the-team">The team</a></li>
+                <li class="nav-link"><a href="#the-team">The team</a></li>
                 <li>|</li>
-                <li><a href="#publications">Publications</a></li>
+                <li class="nav-link"><a href="#publications">Publications</a></li>
                 <li>|</li>
-                <li><a href="#news">News</a></li>
+                <li class="nav-link"><a href="#news">News</a></li>
                 <li>|</li>
-                <li><a href="#in-pictures">Our work in pictures</a></li>
+                <li class="nav-link"><a href="#in-pictures">Our work in pictures</a></li>
                 <li>|</li>
-                <li><a href="#contact-us">Contact us</a></li>
+                <li class="nav-link"><a href="#contact-us">Contact us</a></li>
             </ul>
-        </div>
+        </nav>
         <div id="language-selector">
             <a class="lang-btn" id="active-lang-btn">English</a>
             <a href="hu.html" class="lang-btn" id="passive-lang-btn">Magyar</a>
         </div>
-    </div>
+    </header>
 
     <div class="content" id="about-us">
         <h1>About us</h1>
@@ -84,24 +84,28 @@
 
     <div class="content" id="news">
         <h1>News</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Aliquam velit erat, tristique a lectus id, eleifend ultrices est.
-            Pellentesque felis justo, dignissim ut tortor eget, dignissim pellentesque ante.
-            Pellentesque quis est vel velit placerat finibus nec id ex.
-            Suspendisse mattis tristique nulla in fringilla.
-            Morbi fringilla luctus velit. Morbi nisi mauris, imperdiet ac pretium vel,
-            egestas et lectus. Sed imperdiet enim in aliquam ornare. In id tempus diam,
-            eget lacinia massa.
-        </p>
-        <p>
-            Sed convallis tincidunt eros, ac accumsan dolor auctor nec.
-            Nam sodales arcu sed consectetur tincidunt. Sed ipsum leo, fringilla at
-            egestas vitae, molestie sed odio. In hac habitasse platea dictumst.
-            Nullam at nisi eget magna elementum condimentum. Maecenas at feugiat magna,
-            eu porta erat. Morbi sed libero scelerisque tortor iaculis porttitor non ut sapien.
-            Fusce non leo sed neque porttitor consectetur a a nibh. 
-        </p>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Aliquam velit erat, tristique a lectus id, eleifend ultrices est.
+                Pellentesque felis justo, dignissim ut tortor eget, dignissim pellentesque ante.
+                Pellentesque quis est vel velit placerat finibus nec id ex.
+                Suspendisse mattis tristique nulla in fringilla.
+                Morbi fringilla luctus velit. Morbi nisi mauris, imperdiet ac pretium vel,
+                egestas et lectus. Sed imperdiet enim in aliquam ornare. In id tempus diam,
+                eget lacinia massa.
+            </p>
+        </article>
+        <article>
+            <p>
+                Sed convallis tincidunt eros, ac accumsan dolor auctor nec.
+                Nam sodales arcu sed consectetur tincidunt. Sed ipsum leo, fringilla at
+                egestas vitae, molestie sed odio. In hac habitasse platea dictumst.
+                Nullam at nisi eget magna elementum condimentum. Maecenas at feugiat magna,
+                eu porta erat. Morbi sed libero scelerisque tortor iaculis porttitor non ut sapien.
+                Fusce non leo sed neque porttitor consectetur a a nibh. 
+            </p>
+        </article>
     </div>
 
     <div class="content" id="in-pictures">
@@ -127,20 +131,19 @@
         </p>
     </div>
 
-    <div class="header-footer" id="footer">
+    <footer class="header-footer" id="footer">
         <div id="copyright">
-            <p>© 2025 Language Acquisition Research Group</p>
+            <p>2025 Language Acquisition Research Group</p>
             <p>
                 Egry József utca 1<br>
                 Budapest<br>
                 Hungary<br>
                 1111
             </p>
+            <p><a href="https://github.com/krisztinasara" target="_blank">Design by Krisztina Sára Lukics</a></p>
         </div>
-    </div>
+    </footer>
 
 </body>
 
 </html>
-
-
