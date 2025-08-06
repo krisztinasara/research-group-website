@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 10px 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const sections = document.querySelectorAll("section");
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#members">Lab Members</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="container">
+            <div>
+                <h1>Welcome to Our Research Group</h1>
+                <h2>Our Research in Pictures</h2>
+                <div class="gallery">
+                    <img src="image1.jpg" alt="Research Image 1">
+                    <img src="image2.jpg" alt="Research Image 2">
+                    <img src="image3.jpg" alt="Research Image 3">
+                </div>
+                <h2>About Our Research</h2>
+                <p>We explore the cognitive mechanisms behind language acquisition, schematization, and grammaticalization. Our work bridges psycholinguistics and cognitive science to uncover fundamental aspects of human cognition.</p>
+            </div>
+        </section>
+        <section id="members" class="container">
+            <div>
+                <h2>Our Team</h2>
+                <div class="member">
+                    <h3>Dr. Jane Doe</h3>
+                    <p>Principal Investigator</p>
+                </div>
+                <div class="member">
+                    <h3>John Smith</h3>
+                    <p>Postdoctoral Researcher</p>
+                </div>
+            </div>
+        </section>
+        <section id="publications" class="container">
+            <div>
+                <h2>Our Publications</h2>
+                <p><strong>Title of Paper 1</strong> - Author(s): A. Author, B. Author</p>
+                <p><strong>Title of Paper 2</strong> - Author(s): C. Author, D. Author</p>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <div>
+                <h2>Contact Us</h2>
+                <p>Email: info@researchgroup.com</p>
+                <p>Phone: +1 (555) 123-4567</p>
+                <p>Address: 123 Research Lane, Science City, Country</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Research Group. All rights reserved.</p>
+    </footer>
+</body>
+</html>
