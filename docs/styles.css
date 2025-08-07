@@ -129,3 +129,10 @@ a:link, a:visited {
 #copyright {
     list-style: none;
 }
+
+/* =====================
+   8. Playing around
+   ===================== */
+.invisible {
+    display: none;
+}
